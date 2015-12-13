@@ -13,10 +13,20 @@ Only develop enviroment
 - ES6+
 - Auto reload server & hot reload client
 
+##Doing
+
+- Production enviroment
+- Tests
+
+##TODO
+
+- Autodoc
+- Sample components
+- TSX (TypeScript) components
+
 ##Install
 
 ```
-npm install -g babel-cli nodemon
 npm install
 ```
 

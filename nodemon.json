@@ -1,0 +1,7 @@
+{
+  "verbose": false,
+  "ignore": [],
+  "execMap": {
+    "js": "babel-node"
+  }
+}

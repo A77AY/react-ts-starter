@@ -6,8 +6,9 @@
   "keywords": [],
   "scripts": {
     "start": "node ./node_modules/concurrently/src/main.js --kill-others \"npm run dev\" \"npm run hot\"",
-    "dev": "nodemon ./src/server.js dev --exec babel-node",
-    "hot": "babel-node ./webpack/server.js webpack"
+    "dev": "node ./node_modules/nodemon/bin/nodemon.js ./src/server.js dev",
+    "hot": "babel-node ./webpack/server.js webpack",
+    "preinstall": "npm install -g babel-cli"
   },
   "dependencies": {
     "body-parser": "^1.14.1",
@@ -27,6 +28,7 @@
     "concurrently": "^1.0.0",
     "css-loader": "^0.23.0",
     "json-loader": "^0.5.4",
+    "nodemon": "^1.8.1",
     "react-bem-classes": "^1.0.3",
     "react-hot-loader": "^1.3.0",
     "style-loader": "^0.13.0",
