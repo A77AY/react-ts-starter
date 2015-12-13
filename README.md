@@ -1,4 +1,4 @@
-#Universe codename
+#React Universal (Isomorphic) Hot Starter Kit
 
 ##Install
 
