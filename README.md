@@ -1,4 +1,17 @@
-#React Universal (Isomorphic) Hot Starter Kit
+#React Starter Kit
+
+- React
+    - React-Router
+    - BEM
+- Webpack
+
+Only develop enviroment
+
+##Features
+
+- ~~Isomorphic~~ Universal
+- ES6+
+- Auto reload server & hot reload client
 
 ##Install
 
