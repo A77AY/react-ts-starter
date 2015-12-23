@@ -2,7 +2,6 @@
 
 - React
     - React-Router
-    - BEM
 - Webpack
 
 Only develop enviroment

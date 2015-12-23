@@ -5,13 +5,17 @@
   "description": "",
   "keywords": [],
   "scripts": {
-    "start": "node ./node_modules/concurrently/src/main.js --kill-others \"npm run dev\" \"npm run hot\"",
+    "start": "node ./node_modules/concurrently/src/main.js --kill-others \"npm run dev\" \"npm run webpack-hot\"",
     "dev": "node ./node_modules/nodemon/bin/nodemon.js ./src/server.js dev",
-    "hot": "babel-node ./webpack/server.js webpack",
+    "webpack-hot": "babel-node ./webpack/server.js webpack",
+    "prod-bundle": "babel ./src/server.js -o ./src/server-prod.js",
+    "webpack-bundle": "",
+    "prod": "node ./src/server-prod.js prod",
     "preinstall": "npm install -g babel-cli"
   },
   "dependencies": {
     "body-parser": "^1.14.1",
+    "classnames": "^2.2.1",
     "express": "^4.13.3",
     "history": "^1.13.1",
     "path": "^0.12.7",
@@ -27,6 +31,7 @@
     "babel-preset-stage-0": "^6.3.13",
     "concurrently": "^1.0.0",
     "css-loader": "^0.23.0",
+    "file-loader": "^0.8.5",
     "json-loader": "^0.5.4",
     "nodemon": "^1.8.1",
     "react-bem-classes": "^1.0.3",
