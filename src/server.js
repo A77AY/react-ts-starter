@@ -1,5 +1,4 @@
-require.extensions['.css'] = () => {};
-require.extensions['.styl'] = () => {};
+require.extensions['.css'] = require.extensions['.styl'] = () => {};
 
 import config from './config'
 import path from 'path'
