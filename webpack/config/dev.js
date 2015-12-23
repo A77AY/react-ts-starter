@@ -8,7 +8,7 @@ export default {
 		bundle: [
 			'webpack-dev-server/client?'+config.url,
 			'webpack/hot/only-dev-server',
-			path.join(config.rootDir, 'src/bootstrap.js')
+			path.join(config.rootDir, 'src/client.js')
 		]
 	},
 	output: {
