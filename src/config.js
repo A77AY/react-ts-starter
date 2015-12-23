@@ -3,8 +3,12 @@ import baseConfig from '../config';
 
 let config = baseConfig;
 let env = config.env = process.argv[2] ? process.argv[2] : "dev";
-config.isClient = (typeof document !== 'undefined');
+let isClient = config.isClient = (typeof document !== 'undefined');
 config.rootDir = path.join(__dirname, '..');
+
+if (env === 'dev' && !isClient) {
+    require.extensions['.css'] = require.extensions['.styl'] = () => {};
+}
 
 config.dev.url = getUrl(config.dev);
 config.prod.url = getUrl(config.prod);

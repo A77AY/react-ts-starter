@@ -1,7 +1,7 @@
 import React, {Component, PropTypes} from 'react'
 import {Link} from 'react-router'
 import config from '../../config'
-import style from './html.styl'
+import './html.styl'
 
 export default class HTML extends Component {
 
@@ -34,7 +34,7 @@ export default class HTML extends Component {
             fontSize: '14px'
         };
         return (
-            <html style={style}>
+            <html>
                 <head>
                     <title>{title}</title>
                     <meta name="description" content={description} />
