@@ -1,4 +1,7 @@
-import preconfig from './preconfig'
+require.extensions['.css'] = () => {};
+require.extensions['.styl'] = () => {};
+
+import config from './config'
 import path from 'path'
 import express from 'express'
 import bodyParser from 'body-parser'
@@ -6,7 +9,6 @@ import React from 'react'
 import {renderToString} from 'react-dom/server'
 import {match, RoutingContext} from 'react-router'
 import routes from './routes'
-import config from './config'
 
 // Express
 const app = express();

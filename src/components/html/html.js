@@ -42,7 +42,7 @@ export default class HTML extends Component {
                 </head>
                 <body style={style}>
                     <div>
-                        <div style={{height: '38%', minHeight: '300px'}}>
+                        <div style={{height: '20%', minHeight: '100px'}}>
                             <nav>
                                 <Link to="/">Home</Link>
                                 <br />
