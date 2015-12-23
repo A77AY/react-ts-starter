@@ -36,6 +36,10 @@ export default {
                 test: /\.styl$/,
                 loaders: ['style', 'css?sourceMap', 'stylus?sourceMap'],
                 include: path.join(config.rootDir, 'src')
+            },  {
+                test: /\.(jpe?g|png|eot|woff2?|ttf|gif|svg)(\?.*)?$/i,
+                loader: 'file-loader',
+                include: path.join(config.rootDir, 'src')
             }
         ]
 	}
