@@ -1,6 +1,6 @@
 import React, {Component, PropTypes} from 'react'
 import {Link} from 'react-router'
-import config from '../../config'
+import config from '../../configs/config'
 import './html.styl'
 
 export default class HTML extends Component {
@@ -26,10 +26,6 @@ export default class HTML extends Component {
         let style = {
             margin: 0,
             padding: 0,
-            height: '100%',
-            minHeight: '100%',
-            width: '100%',
-            minWidth: '100%',
             fontFamily: ['sans-serif', 'Helvetica', 'Arial'],
             fontSize: '14px'
         };

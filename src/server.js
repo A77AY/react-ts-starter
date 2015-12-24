@@ -1,4 +1,5 @@
-import config from './config'
+import './configs/server'
+import config from './configs/config'
 import path from 'path'
 import express from 'express'
 import bodyParser from 'body-parser'

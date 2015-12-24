@@ -1,6 +1,6 @@
 import webpack from 'webpack'
 import WebpackDevServer from 'webpack-dev-server'
-import config from '../src/config'
+import config from '../src/configs/config'
 import webpackConfig from './config/dev'
 
 // Run

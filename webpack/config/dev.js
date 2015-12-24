@@ -1,6 +1,6 @@
 import path from 'path'
 import webpack from 'webpack'
-import config from '../../src/config'
+import config from '../../src/configs/config'
 
 export default {
 	devtool: '#source-map',
