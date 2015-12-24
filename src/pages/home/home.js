@@ -21,7 +21,7 @@ export default class Home extends Component {
     render() {
         return (
             <div>
-                Home page test
+                Home page
             </div>
         );
     }

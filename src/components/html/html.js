@@ -2,7 +2,9 @@ import React, {Component, PropTypes} from 'react'
 import {Link} from 'react-router'
 import config from '../../configs/config'
 import './html.styl'
+import withViewport from '../../decorators/withViewport'
 
+@withViewport
 export default class HTML extends Component {
 
     static propTypes = {};
@@ -37,17 +39,17 @@ export default class HTML extends Component {
                     <meta name="viewport" content="width=device-width, initial-scale=1" />
                 </head>
                 <body style={style}>
-                    <div>
-                        <div style={{height: '20%', minHeight: '100px'}}>
+                    <div style={{height: '30%', minHeight: '300px', backgroundColor: '#eee'}}>
+                        <div style={{maxWidth: '1600px', margin: '0 auto'}}>
                             <nav>
                                 <Link to="/">Home</Link>
                                 <br />
                                 <Link to="error">Error</Link>
                             </nav>
                         </div>
-                        <div>
-                            {this.props.children}
-                        </div>
+                    </div>
+                    <div style={{maxWidth: '1600px', margin: '0 auto'}}>
+                        {this.props.children}
                     </div>
                     <script src={config.env === "dev" ? config.webpack.url + '/static/bundle.js' : 'static/bundle.js'}></script>
                 </body>
